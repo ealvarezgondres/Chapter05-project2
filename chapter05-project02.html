@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Chapter 5</title>
+  <link rel="stylesheet" href="chapter05-project02.css" />
+</head>
+<body>
+  <section>
+    <legend>Advace Art Work Search</legend>
+    <form method="get" action="http://www.randyconnolly.com/tests/process.php" >
+    <fieldset>
+      <input type="search" name="search" placeholder="Search title"/>
+      
+      <label>Subject:</label>
+      <input type="radio" name="subject" value="1"/>History
+      <input type="radio" name="subject" value="2"/>Person
+      <input type="radio" name="subject" value="3"/>Landscape
+
+      <select name="filter">
+        <option>Select Genre</option>
+        <option value="1">Baroque</option>
+        <option value="2">Renaissance</option>
+        <option value="3">Realism</option>
+        <option value="4">Romantism</option>
+        <option value="5">Mannerism</option>
+        <option value="6">Neo-Classicism</option>
+      </select>
+      <input value="Filter" type="submit"/>
+    </fieldset>
+  
+    <fieldset>
+      <select name="action">
+      <option>Bulk Action</option>
+      <option name="action" value="1">Archive</option>
+      <option name="action" value="2">Edit</option>
+      <option name="action" value="3">Delete</option>
+      <option name="action" value="4">Collection</option>
+    </select>
+    <input value="Apply To All" type="submit"/>
+  </fieldset>
+  
+  <fieldset class="painting">
+    <table>
+    <caption>Paintings</caption>
+    <thead>
+      <tr>
+        <th></th> 
+         <th colspan="2" title="Title">Title</th>  
+         <th title="Artist">Artist</th>
+         <th title="Year">Year</th>
+         <th title="Genre">Genre</th>
+         <th title="Actions">Actions</th>
+      </tr>
+   </thead>
+
+  <tbody>
+    <tr>
+      <td><input type="checkbox" name="index[]" value="10"/></td>
+      <td><img src="images/05030.jpg"/></td>
+      <td><i>Death of Marat</i></td>
+      <td>David, Jacques-Louis</td>
+      <td>1793</td>
+      <td>Romantism</td>
+      <td>
+        <button ><img src="images/archive.png"/></button>
+        <button><img src="images/edit.png"/></button>
+        <button><img src="images/delete.png"/></button>
+        <button><img src="images/collection.png"/></button>
+      </td>
+    </tr>
+
+    <tr>
+    <td><input type="checkbox" name="index[]" value="20"/></td>
+    <td><img src="images/120010.jpg"/></td>
+    <td>Portrait of Elenor of Toledo</td>
+    <td>Bronzino, Agnolo</td>
+    <td>1545</td>
+    <td>Mannerism</td>
+      <td>
+        <button><img src="images/archive.png"/></button>
+        <button><img src="images/edit.png"/></button>
+        <button><img src="images/delete.png"/></button>
+        <button><img src="images/collection.png"/></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" name="index[]" value="30"/></td>
+      <td><img src="images/07020.jpg"/></td>
+      <td> Liberty Leanding the People</td>
+      <td>Delacroix, Eugene</td>
+      <td>1830</td>
+      <td>Romantism</td>
+      <td>
+        <button><img src="images/archive.png"/></button>
+        <button><img src="images/edit.png"/></button>
+        <button><img src="images/delete.png"/></button>
+        <button><img src="images/collection.png"/></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" name="index[]" value="40"/></td>
+      <td><img src="images/13030.jpg"/></td>
+      <td>Arrangement in Grey and Black</td>
+      <td>Whistle, James Abbott</td>
+      <td>1871</td>
+      <td>Realism</td>
+      <td>
+        <button><img src="images/archive.png"/></button>
+        <button><img src="images/edit.png"/></button>
+        <button><img src="images/delete.png"/></button>
+        <button><img src="images/collection.png"/></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" name="index[]" value="50"/></td>
+      <td><img src="images/06010.jpg"/></td>
+      <td>Mademoiselle Caroline Riviere</td>
+      <td>Ingres, Jean-Auguste</td>
+      <td>1806</td>
+      <td>Neo-Classicism</td>
+      <td>
+        <button><img src="images/archive.png"/></button>
+        <button><img src="images/edit.png"/></button>
+        <button><img src="images/delete.png"/></button>
+        <button><img src="images/collection.png"/></button>
+      </td>
+      </tr>
+
+    </tbody>
+    </table>                   
+  </fieldset>
+  </form>
+  </section>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: 'Merriweather', serif; 
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  position: fixed;
+}
+
+section {
+  background-color: rgb(245, 244, 244);
+  margin: 4em 8em 1em 25em;
+  padding: 0px 0px 20px 0px ;
+  border: solid 1pt rgb(101, 100, 100);
+}
+
+legend {
+  background-color: #616161 ;
+  color: rgb(255, 255, 255);
+  padding: .5rem 0rem .5rem 0rem;
+  margin: -1.5rem 5rem 2rem 5rem;
+  text-align: center;  
+  font-size: 1.5em;
+}
+
+caption {
+  background-color: #BDBDBD;
+  padding: .5rem;
+  font-weight: 300px ;
+}
+th{
+  color: #000000;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #E0E0E0 ;
+  margin: -1.5rem 5rem 2rem 5rem;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  border-top:solid .7pt #979898;
+  padding: .5rem 0rem .9rem 1rem;
+  font-size: 12px;
+}
+
+fieldset {
+   margin: 1px 30px 0px 20px;
+   background-color: #dedede;
+}
+
+.painting{
+  margin: 10px 30px 5px 20px;
+  background-color: #f4f4f4;
+}
+
+button{
+  background: #e6e6e6;
+  border: solid .5px #9a9999;
+}
+
+button:hover{
+  background: #cdcdcd;
+  border: solid .5px #d0cece;
+}
